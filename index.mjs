@@ -30,7 +30,7 @@ function u(r) {
         "general"
       ]
     ],
-    "content": title ? `🎵${artist} - ${title}` : ""
+    "content": title ? `🎵${title} - ${artist}` : ""
   };
 
   event.id = getEventHash(event);
