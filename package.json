@@ -1,0 +1,30 @@
+{
+  "name": "nostr-termux-nowplaying",
+  "description": "Small nostr tool that automatically set user status with currently playing music with Termux:API",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yonle/nostr-termux-nowplaying.git"
+  },
+  "keywords": [
+    "nowplaying",
+    "nostr",
+    "status"
+  ],
+  "author": "Yonle <yonle@lecturify.net>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Yonle/nostr-termux-nowplaying/issues"
+  },
+  "homepage": "https://github.com/Yonle/nostr-termux-nowplaying#readme",
+  "dependencies": {
+    "nostr-tools": "^1.17.0",
+    "websocket-polyfill": "^0.0.2"
+  }
+}
