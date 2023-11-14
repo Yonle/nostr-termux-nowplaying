@@ -14,8 +14,8 @@ const relays = readFileSync("relays.txt", "utf8").split("\n").filter(i => i?.sta
 
 const pool = new SimplePool();
 function u(r) {
+  if (!r) r = '{ "content": "", "title": "" }';
   let j = JSON.parse(r).filter(i => i.id == 1001)[0];
-  if (!j) j = { content: "", title: "" };
   if (artist == j.content && title == j.title) return;
   artist = j.content;
   title = j.title;
