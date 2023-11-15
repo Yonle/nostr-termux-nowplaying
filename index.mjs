@@ -29,10 +29,10 @@ function u(r) {
     "tags": [
       [
         "d",
-        "general"
+        "music"
       ]
     ],
-    "content": title ? `🎵${title} - ${artist}` : ""
+    "content": title ? `${title} - ${artist}` : ""
   };
 
   event.id = getEventHash(event);
