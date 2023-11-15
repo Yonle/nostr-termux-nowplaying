@@ -38,7 +38,7 @@ function u(r) {
   event.id = getEventHash(event);
   event.sig = getSignature(event, privkey);
 
-  console.log(`🎵${title} - ${artist}`);
+  console.log(`♫ ${title} - ${artist}`);
   pool.publish(relays, event);
 }
 
