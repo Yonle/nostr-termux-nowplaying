@@ -21,6 +21,9 @@ com.soundcloud.android
 ## NewPipe
 org.schabi.newpipe
 
+## PipePipe (NewPipe Fork)
+InfinityLoop1309.NewPipeEnhanced
+
 ## ViMusic
 it.vfsfitvnm.vimusic
 
