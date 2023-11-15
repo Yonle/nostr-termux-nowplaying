@@ -24,3 +24,5 @@ org.schabi.newpipe
 ## ViMusic
 it.vfsfitvnm.vimusic
 
+## Innertune
+com.zionhuang.music
