@@ -11,10 +11,11 @@ let privkey = readFileSync("privatekey.txt", "utf8").split("\n")[0];
 if (privkey.startsWith("nsec")) privkey = nip19.decode(privkey).data;
 const pubkey = getPublicKey(privkey);
 const relays = readFileSync("relays.txt", "utf8").split("\n").filter(i => i?.startsWith("ws"));
+const applist = readFileSync("app_names.txt", "utf8").split("\n").filter(i => !i.startsWith("#"));
 
 const pool = new SimplePool();
 function u(r) {
-  let j = JSON.parse(r).filter(i => i.id == 1001)[0];
+  let j = JSON.parse(r).filter(i => applist.includes(i.packageName))[0];
   if (!j) j = { content: "", title: "" };
   if (artist == j.content && title == j.title) return;
   if (!title) console.log("Waiting for player notification....");

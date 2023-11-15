@@ -1,0 +1,26 @@
+# app name of an notification.
+# to check your app package name, run:
+#   $ termux-notification-list
+
+## Spotify
+com.spotify.music
+
+## YouTube & YT Music
+com.google.android.youtube
+com.google.android.apps.youtube.music
+
+## Apple Music
+com.apple.android.music
+
+## Deezer
+deezer.android.app
+
+## Soundcloud
+com.soundcloud.android
+
+## NewPipe
+org.schabi.newpipe
+
+## ViMusic
+it.vfsfitvnm.vimusic
+
