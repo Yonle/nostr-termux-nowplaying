@@ -5,10 +5,10 @@ import { exec } from "child_process";
 
 let artist = null;
 let title = null;
-let socks = new Set();
 
 let privkey = readFileSync("privatekey.txt", "utf8").split("\n")[0];
 if (privkey.startsWith("nsec")) privkey = nip19.decode(privkey).data;
+
 const pubkey = getPublicKey(privkey);
 const relays = readFileSync("relays.txt", "utf8").split("\n").filter(i => i?.startsWith("ws"));
 const applist = readFileSync("app_names.txt", "utf8").split("\n").filter(i => !i.startsWith("#"));
@@ -18,7 +18,7 @@ function u(r) {
   let j = JSON.parse(r).filter(i => applist.includes(i.packageName))[0];
   if (!j) j = { content: "", title: "" };
   if (artist == j.content && title == j.title) return;
-  if (!title) console.log("Waiting for player notification....");
+  if (!j.title) console.log("Waiting for player notification....");
   artist = j.content;
   title = j.title;
 
@@ -30,6 +30,10 @@ function u(r) {
       [
         "d",
         "music"
+      ],
+      [
+        "r",
+        "spotify:search:" + encodeURIComponent(`${title} - ${artist}`)
       ]
     ],
     "content": title ? `${title} - ${artist}` : ""
@@ -43,7 +47,6 @@ function u(r) {
 }
 
 function g() {
-  const execT = Date.now();
   exec("termux-notification-list", (err, b) => {
     g();
     if (err) return;
