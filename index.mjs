@@ -1,6 +1,6 @@
 import "websocket-polyfill";
 import { readFileSync } from "fs";
-import { getEventHash, getSignature, validateEvent, verifySignature, getPublicKey, SimplePool, nip19 } from "nostr-tools";
+import { getEventHash, getSignature, getPublicKey, SimplePool, nip19 } from "nostr-tools";
 import { exec } from "child_process";
 
 let artist = null;
