@@ -3,10 +3,10 @@
 #   $ termux-notification-list
 
 # Syntax:
-# package.name link:search:
+# package.name https://..../search?q=
 
 ## Spotify
-com.spotify.music spotify:search:
+com.spotify.music https://open.spotify.com/search/results/
 
 ## YouTube & YT Music
 com.google.android.youtube https://www.youtube.com/results?q=
