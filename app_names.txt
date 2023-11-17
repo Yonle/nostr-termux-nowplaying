@@ -2,30 +2,33 @@
 # to check your app package name, run:
 #   $ termux-notification-list
 
+# Syntax:
+# package.name link:search:
+
 ## Spotify
-com.spotify.music
+com.spotify.music spotify:search:
 
 ## YouTube & YT Music
-com.google.android.youtube
-com.google.android.apps.youtube.music
+com.google.android.youtube https://www.youtube.com/results?q=
+com.google.android.apps.youtube.music https://music.youtube.com/results?q=
 
 ## Apple Music
-com.apple.android.music
+com.apple.android.music https://music.apple.com/search?term=
 
 ## Deezer
 deezer.android.app
 
 ## Soundcloud
-com.soundcloud.android
+com.soundcloud.android https://soundcloud.com/search?q=
 
 ## NewPipe
-org.schabi.newpipe
+org.schabi.newpipe https://www.youtube.com/results?q=
 
 ## PipePipe (NewPipe Fork)
-InfinityLoop1309.NewPipeEnhanced
+InfinityLoop1309.NewPipeEnhanced https://www.youtube.com/results?q=
 
 ## ViMusic
-it.vfsfitvnm.vimusic
+it.vfsfitvnm.vimusic https://music.youtube.com/results?q=
 
 ## Innertune
-com.zionhuang.music
+com.zionhuang.music https://music.youtube.com/results?q=
