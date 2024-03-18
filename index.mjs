@@ -16,7 +16,7 @@ const applist = new Map(readFileSync("app_names.txt", "utf8").split("\n").filter
 const pool = new SimplePool();
 
 function u(r) {
-  let j = JSON.parse(r).filter(i => applist.has(i.packageName))[0];
+  let j = JSON.parse(r).filter(i => applist.has(i.packageName)).pop();
   if (!j) j = { content: "", title: "" };
   if (artist == j.content && title == j.title) return;
   if (!j.title) console.log("Waiting for player notification....");

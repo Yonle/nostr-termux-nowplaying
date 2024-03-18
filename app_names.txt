@@ -21,6 +21,9 @@ deezer.android.app
 ## Soundcloud
 com.soundcloud.android https://soundcloud.com/search?q=
 
+## Bilibili (CN)
+tv.danmaku.bili https://www.bilibili.com/search?keyword=
+
 ## NewPipe
 org.schabi.newpipe https://www.youtube.com/results?q=
 
