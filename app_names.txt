@@ -12,6 +12,10 @@ com.spotify.music https://open.spotify.com/search/results/
 com.google.android.youtube https://www.youtube.com/results?q=
 com.google.android.apps.youtube.music https://music.youtube.com/results?q=
 
+#### Revanced edition
+app.revanced.android.youtube https://www.youtube.com/results?q=
+app.revanced.android.apps.youtube.music https://music.youtube.com/results?q=
+
 ## Apple Music
 com.apple.android.music https://music.apple.com/search?term=
 
