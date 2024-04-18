@@ -49,7 +49,9 @@ function g() {
   exec("termux-notification-list", (err, b) => {
     setTimeout(g, 1000*10);
     if (err) return;
-    u(b);
+    try {
+      u(b);
+    } catch {}
   });
 }
 
